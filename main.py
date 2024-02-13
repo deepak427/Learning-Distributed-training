@@ -4,6 +4,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.optimizers import Adam
 
 # Load and preprocess data (MNIST dataset)
+
 (x_train, y_train), _ = tf.keras.datasets.mnist.load_data()
 x_train = x_train / 255.0
 y_train = tf.keras.utils.to_categorical(y_train, num_classes=10)
